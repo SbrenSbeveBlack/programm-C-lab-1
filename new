@@ -1,14 +1,16 @@
 #include <stdio.h>
 #include <math.h>
 int main()
-{   
+{   double d = 0;
+    while (d<=0)
+    {
     int i;
     double a,b,c;
-    printf("Впишите a,b,c через пробел:\n");
+    printf("\nВпишите a,b,c через пробел:\n");
     scanf("%lf",&a);
     scanf("%lf",&b);
     scanf("%lf",&c);
-    double d = pow(b,2) - (4*a*c);
+    d = pow(b,2) - (4*a*c);
     float a1;
     double x1 = (-b + sqrt(d))/(2*a);
     double x2 = (-b - sqrt(d))/(2*a);
@@ -21,6 +23,9 @@ int main()
     }
     if (d < 0){
     printf("kornei net");
+    
+    }
     }
     return 0;
-}
+    }
+    
